@@ -1,4 +1,8 @@
 @echo off
+echo _____________________________________________________
+echo Program by TerisC www.teris-cooper.de
+echo _____________________________________________________
+
 whoami /groups | find "S-1-16-12288" > nul
 if %errorlevel% == 0 (
 	goto check
@@ -46,6 +50,8 @@ if "%value%" EQU "" (
 	exit
 
 :menu
+	echo _____________________________________________________
+	echo Program by TerisC www.teris-cooper.de
 	echo _____________________________________________________
 	echo Menu: 
 	echo 1 = Aktivieren
